@@ -36,4 +36,4 @@ jobs:
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
         run: |
-          railway up --force
+          railway deploy --project 87bef08b-08d1-4726-8ecc-6e0a605ea0e4 --force
