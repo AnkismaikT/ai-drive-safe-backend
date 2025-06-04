@@ -36,4 +36,4 @@ jobs:
           curl -X POST https://api.railway.app/v1/deploy \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d '{"branch": "main", "project": "ai-drive-safe"}'
+            -d '{"branch": "main", "project": "87bef08b-08d1-4726-8ecc-6e0a605ea0e4"}'
