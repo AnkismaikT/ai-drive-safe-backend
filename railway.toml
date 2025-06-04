@@ -1,5 +1,5 @@
 [project]
-name = "ankismaikt-ai-drive-safe"
+name = "87bef08b-08d1-4726-8ecc-6e0a605ea0e4"
 
 [deploy]
 branch = "main"
@@ -7,6 +7,6 @@ command = "npm install && npm start"
 
 [environment]
 PORT = "3000"
-FIREBASE_PROJECT_ID = "your_project_id"
-FIREBASE_CLIENT_EMAIL = "your_service_account_email"
-FIREBASE_PRIVATE_KEY = "your_private_key"
+FIREBASE_PROJECT_ID = "ankismaikt-ai-drive-safe"
+FIREBASE_CLIENT_EMAIL = "firebase-adminsdk-fbsvc@ankismaikt-ai-drive-safe.iam.gserviceaccount.com"
+FIREBASE_PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCqRf7Iuo/3j8Cr\ntkI8/k0CFq4xzmZGh7EekrZJ2sCdHL7qgPg8jgGBxjYjOIEWzJyvc/A0qNidvQIu\n1W1iZYRhNtAeLRgjZvW5OrgYluimrItz9410C64M59JAGAAxarxVCqI9lWQgUXc6\naY3ehldi1TvqtpBbDUV4mwgYoic8Q1C4GdeszoI6ypCAlq9ADbkc/9s0q9pms6FP\nPvQWaGnIDjmXDxzipJrgeQ1Pd0c1VCujdNpbDLzBgOoLB6OeBHaAEkJfHbniigCy\nV5cG1h/fEGX7PwvLbWY5iTXOYwAlhIj2Cnj/hY33k9ItjyMQNL7kueQWmGuNrJH3\n9oj8pkiLAgMBAAECggEADiYGIhx2eAYG5tMcipWVmosolao75LfDvPGd72HGSDJ/\nnrFxbxQHBgc4BRHd5XdtEZswUNUy4rCLl46pKdhGTrmk7iJQc332WcTfpT4Xk49E\n1dxdHFEYI6m5ARW9dl29y9Hit1FMN5ntWU+KDVKGZ7JQ6ejvnSaWKOELpC2ygEGe\nUdctv7MBp2EPeedpU7fhA2MruWoveaH4lzAolJ3jSpxJtEgHQcufoDj6KYitscJc\nSnU02VYMo63GTMgyvwv2XxSt7SenbfeAnRxLRozhMPYoqWzMWCm+qzt+DDDNGzo0\nr8Nq/ZIGN9ZoOXIEQGm0mKe6ztFLbxJNyDqty0wvoQKBgQDR48clIjbgwDDtH0j/\naIfclOWJ2+ABXVadPvRx1zboqhyRqTt0HrjVh5X7mPfJFQhn+i1aYNBrSgiy0gvy\nrZ88LO+wUYoQUdo4BN9svzjnZ3Qadx4mLA0zpwGujOH7/EtvhMN5U/Pv5GQCzkXA\nPX+UNNKW1KuL6sNyG13RByTaewKBgQDPrjC2gvj4uguo2b98pF3SWW3VVrNkZeOc\nOiA9+8JcmSUt/XJW1d5idh1L2xBBsqqYs+lXJb18nmvaZiLfX45bgv0ac7u399BV\nnZ2hKMi3gtBSPg/r7He94RtMahij8jj2X+T6pAPkiJaGDzexd06POWhefAJMWlr9\nPMXQzAc1MQKBgQCb1GIZZsKZsPdiRZT7047zLTUSWkWAndzdmE0CbEefDBVz69Jx\nTxHpruWiy5pEF7KLCAo+DJ0Q2wGESkCGp3MOyUoXfSJlJXA/oRaEdaB45a0krQWc\nT55pl/e+sWhinpkfLdG3NaZpmAbMsnrE1KPw1Br50uGeWulKwZiwxX4OGwKBgQDA\n6dCsKLs26DLedO4vzMquE4435uKatx6Xx1Kd4RepRkTIFK66RM3fblJGXUYbkOhx\nEmYFIrSCZvJOnCN2lN+619FeWfUcraCjdtauliDkfioeyzGk+DI+ejUOZVtgJyeM\njIU54VMQXWRdQRN90RJzbmMpqU3FOQVeSK6EBpIHcQKBgQDRUG8Am5RJBDUW15pG\n3QuBsvjzmmYdDyWUmVPD6T4aa4pYl8YMTG8BR0omuCa9ToVH85oq/Lka+zWj2kY7\n1AjVbx2oooFa1UoviUcrbu5HJeQwcPoq6YXVyd8Wp4l6JfC2h3Kc74RLrjlTQX9R\n/wfUIzInUyc/4eljlYFrR8+ftQ==\n-----END PRIVATE KEY-----"
