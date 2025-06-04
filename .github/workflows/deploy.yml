@@ -26,6 +26,9 @@ jobs:
           echo "token=${{ secrets.RAILWAY_TOKEN }}" > .railway
           cat .railway
       
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+      
       - name: Deploy to Railway
         env:
           PORT: ${{ secrets.PORT }}
@@ -33,7 +36,4 @@ jobs:
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
         run: |
-          curl -X POST https://api.railway.app/v1/deploy \
-            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"branch": "main", "project": "87bef08b-08d1-4726-8ecc-6e0a605ea0e4"}'
+          railway up --force
