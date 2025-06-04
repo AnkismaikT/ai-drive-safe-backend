@@ -19,14 +19,21 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Build and Deploy
+      - name: Configure Railway
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          echo "token=${{ secrets.RAILWAY_TOKEN }}" > .railway
+          cat .railway
+      
+      - name: Deploy to Railway
         env:
           PORT: ${{ secrets.PORT }}
           FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
           FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
-          npm install -g @railway/cli
-          echo "token=${{ secrets.RAILWAY_TOKEN }}" > .railway
-          railway up . --force
+          curl -X POST https://api.railway.app/v1/deploy \
+            -H "Authorization: Bearer ${{ secrets.RAILWAY_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"branch": "main", "project": "ai-drive-safe"}'
