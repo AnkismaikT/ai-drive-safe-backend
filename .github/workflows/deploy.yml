@@ -29,4 +29,4 @@ jobs:
         run: |
           npm install -g @railway/cli
           echo "token=${{ secrets.RAILWAY_TOKEN }}" > .railway
-          railway up --yes
+          railway up . --force
