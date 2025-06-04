@@ -1,5 +1,5 @@
 [project]
-name = "ai-drive-safe"
+name = "ankismaikt-ai-drive-safe"
 
 [deploy]
 branch = "main"
